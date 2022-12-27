@@ -5,7 +5,7 @@ import joblib
 testing_data = pd.read_csv('Testing.csv')
 training_data = pd.read_csv('Training.csv')
 
-training_data.drop('Unnamed: 133', axis=1, inplace=True)
+# training_data.drop('Unnamed: 133', axis=1, inplace=True)
 
 X_train = training_data.drop(columns=['prognosis'])
 y_train = training_data['prognosis']
